@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Hoja de Vida - Astrid Rondón</title>
+    <!-- Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Mi archivo CSS -->
+    <link rel="stylesheet" href="./assets/css/stilos.css">
+</head>
+
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN (siempre visible arriba) -->
+    <nav class="menu-fijo">
+        <div class="container">
+            <a href="#inicio">Inicio</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#educacion">Educación</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#certificados">Certificados</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- INICIO - Header con foto y nombre -->
+    <header id="inicio" class="header">
+        <div class="container">
+            <!-- Foto de perfil - Reemplaza "tu-foto.jpg" con el nombre de tu imagen -->
+            <img src="./assets/img/ICONO.png" alt="Astrid Rondón" class="foto-perfil">
+            <!-- Si no tienes foto aún, descomenta la línea de abajo y comenta la de arriba -->
+            <!-- <div class="foto-perfil-emoji">👩‍💻</div> -->
+
+            <h1>Astrid Dayanna Rondón Acosta</h1>
+            <p>Estudiante de Desarrollo de Software</p>
+            <p>📍 Bogotá D.C., Colombia</p>
+        </div>
+    </header>
+
+    <!-- SOBRE MÍ -->
+    <section class="seccion">
+        <div class="container">
+            <h2>Sobre Mí</h2>
+            <p>
+                Soy estudiante de Desarrollo de Software con gran capacidad para adaptarme a todo tipo de entornos
+                y aportar siempre lo mejor de mí. Me caracterizo por mi facilidad para el trabajo en equipo y mi
+                entusiasmo por aprender y desarrollar mis habilidades.
+            </p>
+
+            <!-- CONTADOR DE VISITAS (usando LocalStorage) -->
+            <div class="contador">
+                👁️ Visitas: <span id="contadorVisitas">0</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCIA LABORAL -->
+    <section id="experiencia" class="seccion bg-light">
+        <div class="container">
+            <h2>Experiencia Laboral</h2>
+
+            <div class="tarjeta">
+                <h3>💼 Coordinadora de Soporte Técnico</h3>
+                <p class="fecha">📅 Agosto 2024 - Actualmente</p>
+                <p><strong>Fundación ROFE - Toca Una Vida</strong> | Bogotá D.C.</p>
+                <p>Liderazgo del equipo de soporte técnico y gestión de incidencias.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>💻 Pasante en Área de Soporte</h3>
+                <p class="fecha">📅 Febrero - Julio 2024</p>
+                <p><strong>Fundación ROFE - Toca Una Vida</strong> | Bogotá D.C.</p>
+                <p>Resolución de incidencias y mantenimiento de equipos.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>🤝 Monitora del Programa Jóvenes Creativos</h3>
+                <p class="fecha">📅 Marzo - Diciembre 2023</p>
+                <p><strong>Jóvenes Creativos</strong> | Bogotá D.C.</p>
+                <p>Monitora en el área de soporte técnico.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCACIÓN -->
+    <section id="educacion" class="seccion">
+        <div class="container">
+            <h2>Formación Académica</h2>
+
+            <div class="tarjeta">
+                <h3>🎓 Tecnólogo en Desarrollo de Software</h3>
+                <p class="fecha">📅 Agosto 2024 - Actualmente</p>
+                <p><strong>UNINPAHU</strong></p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>💻 Técnico en Programación de Software</h3>
+                <p class="fecha">📅 Abril 2023 - Julio 2024</p>
+                <p><strong>SENA</strong></p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>🏫 Bachiller</h3>
+                <p class="fecha">📅 Enero 2011 - Diciembre 2022</p>
+                <p><strong>Centro Integral José María Córdoba</strong></p>
+                <p>Graduada con excelencia académica y técnico en comunicación gráfica.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HABILIDADES (usando Flexbox) -->
+    <section id="habilidades" class="seccion bg-light">
+        <div class="container">
+            <h2>Habilidades</h2>
+
+            <h4>💻 Habilidades Técnicas</h4>
+            <div class="habilidades">
+                <span class="habilidad">HTML5</span>
+                <span class="habilidad">CSS3</span>
+                <span class="habilidad">JavaScript</span>
+                <span class="habilidad">Front-end</span>
+                <span class="habilidad">Bootstrap</span>
+                <span class="habilidad">Soporte Técnico</span>
+            </div>
+
+            <h4 class="mt-4">🌟 Habilidades Blandas</h4>
+            <div class="habilidades">
+                <span class="habilidad">Trabajo en Equipo</span>
+                <span class="habilidad">Liderazgo</span>
+                <span class="habilidad">Aprendizaje Rápido</span>
+                <span class="habilidad">Comunicación</span>
+                <span class="habilidad">Adaptabilidad</span>
+            </div>
+
+            <h4 class="mt-4">🌍 Idiomas</h4>
+            <div class="habilidades">
+                <span class="habilidad">Español - Nativo</span>
+                <span class="habilidad">Inglés - Básico</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICADOS (Tabla) -->
+    <section id="certificados" class="seccion">
+        <div class="container">
+            <h2>Certificaciones</h2>
+
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>📜 Certificación</th>
+                            <th>🏢 Institución</th>
+                            <th>📅 Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jóvenes Creativos - Front-end con Desempeño Destacado</td>
+                            <td>Jóvenes Creativos</td>
+                            <td>Diciembre 2022</td>
+                        </tr>
+                        <tr>
+                            <td>Conectadas - Mundo Emprendedor Tecnológico</td>
+                            <td>Programa Conectadas</td>
+                            <td>Noviembre 2023</td>
+                        </tr>
+                        <tr>
+                            <td>Introducción a la Programación</td>
+                            <td>Institución Educativa</td>
+                            <td>Octubre 2024</td>
+                        </tr>
+                        <tr>
+                            <td>Cuidado y Protección Animal</td>
+                            <td>Organización Certificadora</td>
+                            <td>Octubre 2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO (Formulario) -->
+    <section id="contacto" class="seccion bg-light">
+        <div class="container">
+            <h2>Contacto</h2>
+
+            <div class="row">
+                <!-- Información de contacto -->
+                <div class="col-md-6">
+                    <div class="info-contacto">
+                        <h4>📞 Mis Datos</h4>
+                        <p><strong>Email:</strong><br>
+                            <a href="mailto:dayannarondon0426@gmail.com">dayannarondon0426@gmail.com</a>
+                        </p>
+
+                        <p><strong>Teléfono:</strong><br>
+                            <a href="tel:+573218100047">+57 321 810 0047</a>
+                        </p>
+
+                        <p><strong>LinkedIn:</strong><br>
+                            <a href="https://www.linkedin.com/in/astridrondon/"
+                                target="_blank">linkedin.com/in/astridrondon</a>
+                        </p>
+
+                        <p><strong>Ubicación:</strong><br>
+                            Bogotá D.C., Colombia</p>
+                    </div>
+                </div>
+
+                <!-- Formulario de contacto -->
+                <div class="col-md-6">
+                    <form id="formularioContacto">
+                        <div class="mb-3">
+                            <label class="form-label">Nombre Completo *</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Email *</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Mensaje *</label>
+                            <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-enviar">✉️ Enviar Mensaje</button>
+                    </form>
+
+                    <!-- Mensaje de éxito -->
+                    <div id="mensajeExito" class="mensaje-exito">
+                        ✅ ¡Mensaje enviado con éxito! Gracias por contactarme.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>© 2024 Astrid Dayanna Rondón Acosta. Todos los derechos reservados.</p>
+
+            <!-- Iconos de redes sociales -->
+            <div class="redes-sociales">
+                <a href="https://www.linkedin.com/in/astridrondon/" target="_blank" title="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg>
+                </a>
+                <a href="mailto:dayannarondon0426@gmail.com" title="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                    </svg>
+                </a>
+                <a href="https://github.com" target="_blank" title="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                </a>
+            </div>
+
+            <p>Desarrollado con ❤️ usando HTML5, CSS3, JavaScript y Bootstrap</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Mi archivo JavaScript -->
+    <script src="./assets/JS/funcion.js"></script>
+
+</body>
+
+</html>
